@@ -169,8 +169,8 @@ export function HeroSection() {
           {/* Credentials Image */}
           <div className="w-full max-w-3xl mt-4 transition-all duration-300 hover:scale-105">
             <img 
-              src="/credentials-bar.png"
-              alt="15+ Years Training Leaders, $0 to 5-Figure, Founder of 3 Companies - Brandon Hall Group Awards"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design-ZUISl78TGqQ8JqWlsCDIMzPS9mv6W4.png"
+              alt="As Seen On CEO Times, 15+ Years Training Leaders, $0 to 5-Figure, Founder of 3 Companies - Brandon Hall Group Awards"
               className="w-full h-auto object-contain"
             />
           </div>
