@@ -139,9 +139,7 @@ export function HeroSection() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-3 mt-2 justify-center">
             <a 
-              href="https://v0-gaming-website-eosin.vercel.app/" 
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://enterthewarroom.humanfirstbykk.com/" 
               className="px-4 md:px-6 py-2 md:py-2.5 text-black text-xs md:text-sm font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center w-fit shadow-md"
               style={{ backgroundColor: '#D4A017' }}
             >
@@ -169,8 +167,8 @@ export function HeroSection() {
           {/* Credentials Image */}
           <div className="w-full max-w-3xl mt-4 transition-all duration-300 hover:scale-105">
             <img 
-              src="/credentials-bar.png"
-              alt="15+ Years Training Leaders, $0 to 5-Figure, Founder of 3 Companies - Brandon Hall Group Awards"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design-ZUISl78TGqQ8JqWlsCDIMzPS9mv6W4.png"
+              alt="As Seen On CEO Times, 15+ Years Training Leaders, $0 to 5-Figure, Founder of 3 Companies - Brandon Hall Group Awards"
               className="w-full h-auto object-contain"
             />
           </div>
