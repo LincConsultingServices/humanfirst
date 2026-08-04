@@ -63,7 +63,7 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-bold mb-4">PROGRAMS</h3>
             <ul className="space-y-2 text-xs text-gray-400">
-              <li><a href="https://enterthewarroom.humanfirstbykk.com/" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">War Room</a></li>
+              <li><a href="https://warroom-demo-262374983592.us-central1.run.app/" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">War Room</a></li>
               <li><Link href="/start-with-you" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Start With You</Link></li>
               <li><Link href="/the-garage" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">The Garage</Link></li>
               

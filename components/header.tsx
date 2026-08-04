@@ -26,14 +26,14 @@ export function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             <Link href="/" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">HOME</Link>
-            <a href="https://enterthewarroom.humanfirstbykk.com/" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">WAR ROOM</a>
+            <a href="https://warroom-demo-262374983592.us-central1.run.app/" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">WAR ROOM</a>
             <Link href="/start-with-you" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">START WITH YOU</Link>
             <Link href="/the-garage" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">THE GARAGE</Link>
           </nav>
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-2 lg:gap-3">
-            <a href="https://enterthewarroom.humanfirstbykk.com/" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
+            <a href="https://warroom-demo-262374983592.us-central1.run.app/" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
               ENTER WAR ROOM
             </a>
             <a href="https://calendly.com/kk-humanfirst/30min" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
@@ -57,7 +57,7 @@ export function Header() {
         {isOpen && (
           <nav className="md:hidden mt-4 flex flex-col gap-4 pb-4 animate-fadeIn">
             <Link href="/" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">HOME</Link>
-            <a href="https://enterthewarroom.humanfirstbykk.com/" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">WAR ROOM</a>
+            <a href="https://warroom-demo-262374983592.us-central1.run.app/" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">WAR ROOM</a>
             <Link href="/start-with-you" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">START WITH YOU</Link>
             <Link href="/the-garage" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">THE GARAGE</Link>
             <a href="https://calendly.com/kk-humanfirst/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-2 text-black text-sm font-medium rounded w-fit transition-all duration-300 hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
