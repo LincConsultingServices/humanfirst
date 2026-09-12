@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 
+import { WAR_ROOM_URL } from '@/lib/site'
+
 interface Particle {
   id: number
   x: number
@@ -139,7 +141,7 @@ export function HeroSection() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-3 mt-2 justify-center">
             <a 
-              href="https://enterthewarroom.humanfirstbykk.com/" 
+              href={WAR_ROOM_URL} 
               className="px-4 md:px-6 py-2 md:py-2.5 text-black text-xs md:text-sm font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center w-fit shadow-md"
               style={{ backgroundColor: '#D4A017' }}
             >

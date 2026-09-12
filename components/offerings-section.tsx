@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 
+import { WAR_ROOM_URL } from '@/lib/site'
+
 export function OfferingsSection() {
   const [sparks, setSparks] = useState<Array<{ id: number; x: number; y: number; tx: number; ty: number }>>([])
   const sparkIdRef = useRef(0)
@@ -153,7 +155,7 @@ export function OfferingsSection() {
               </div>
               <div className="flex flex-col gap-3 mt-6">
                 <a 
-                  href={idx === 0 ? 'https://enterthewarroom.humanfirstbykk.com/' : idx === 1 ? '/start-with-you' : '/the-garage'}
+                  href={idx === 0 ? WAR_ROOM_URL : idx === 1 ? '/start-with-you' : '/the-garage'}
                   className={`${offering.buttonColor} inline-block px-6 py-2 rounded font-medium text-sm transition-all duration-300 w-fit hover:shadow-lg hover:scale-105`}
                   style={offering.buttonStyle}
                 >
