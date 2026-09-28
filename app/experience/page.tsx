@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
@@ -13,7 +12,7 @@ const experiences = [
     title: 'CEO CITY',
     eyebrow: 'A HumanFirst experience',
     description: 'Step into a living environment for entrepreneurial thinking, where leaders make decisions, navigate uncertainty, and build what comes next.',
-    href: '/ceo-city',
+    href: 'https://ceo-city-website-copy.vercel.app',
     cta: 'Explore CEO City',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dssXmCoi1W75RccwF7VoTv2SdQ9gYK.png',
     imageAlt: 'Isometric CEO City live map with roads, buildings, and company markers',
@@ -22,7 +21,7 @@ const experiences = [
     title: 'WAR ROOM',
     eyebrow: 'Live business simulation',
     description: 'Make real decisions, experience the consequences, and learn how to think strategically in a live business simulation powered by AI.',
-    href: '/war-room',
+    href: 'https://enterthewarroom.humanfirstbykk.com',
     cta: 'Enter War Room',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-09-28%20231153-zgRkq4x7fjEDDH8kg84pgCehTs8Kjl.png',
     imageAlt: 'Enter the KK War Room artwork with glowing embers',
@@ -52,7 +51,7 @@ export default function ExperiencePage() {
                   <p className="text-xs tracking-[0.18em] text-[#D4A017] mb-3">{experience.eyebrow}</p>
                   <h2 className="text-3xl md:text-4xl font-black mb-4">{experience.title}</h2>
                   <p className="text-gray-300 leading-relaxed mb-7">{experience.description}</p>
-                  <Link href={experience.href} className="inline-block rounded bg-[#D4A017] px-6 py-3 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:opacity-90">{experience.cta}</Link>
+                  <a href={experience.href} className="inline-block rounded bg-[#D4A017] px-6 py-3 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:opacity-90">{experience.cta}</a>
                 </div>
               </article>
             ))}
