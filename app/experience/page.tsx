@@ -43,10 +43,10 @@ export default function ExperiencePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
             {experiences.map((experience) => (
               <article key={experience.title} className="group overflow-hidden rounded-lg border border-gray-800 bg-[#111]">
-                <div className="relative aspect-[16/9] overflow-hidden bg-gray-900">
+                <a href={experience.href} aria-label={`Open ${experience.title}`} className="relative block aspect-[16/9] overflow-hidden bg-gray-900">
                   <Image src={experience.image} alt={experience.imageAlt} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 1024px) 100vw, 50vw" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-                </div>
+                </a>
                 <div className="p-7 md:p-9">
                   <p className="text-xs tracking-[0.18em] text-[#D4A017] mb-3">{experience.eyebrow}</p>
                   <h2 className="text-3xl md:text-4xl font-black mb-4">{experience.title}</h2>
