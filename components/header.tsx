@@ -26,7 +26,7 @@ export function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             <Link href="/" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">HOME</Link>
-            <a href="https://enterthewarroom.humanfirstbykk.com/" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">WAR ROOM</a>
+            <Link href="/experience" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">EXPERIENCE</Link>
             <Link href="/start-with-you" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">START WITH YOU</Link>
             <Link href="/the-garage" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">THE GARAGE</Link>
           </nav>
