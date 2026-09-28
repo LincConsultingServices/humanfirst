@@ -4,6 +4,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 
+const navigationItems = [
+  { label: 'HOME', href: '/' },
+  { label: 'EXPERIENCE', href: '/experience' },
+  { label: 'START WITH YOU', href: '/start-with-you' },
+  { label: 'THE GARAGE', href: '/the-garage' },
+]
+
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -25,10 +32,11 @@ export function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
-            <Link href="/" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">HOME</Link>
-            <Link href="/experience" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">EXPERIENCE</Link>
-            <Link href="/start-with-you" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">START WITH YOU</Link>
-            <Link href="/the-garage" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">THE GARAGE</Link>
+            {navigationItems.map((item) => (
+              <Link key={item.href} href={item.href} className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">
+                {item.label}
+              </Link>
+            ))}
           </nav>
 
           {/* CTA Buttons */}
@@ -56,10 +64,14 @@ export function Header() {
         {/* Mobile Menu */}
         {isOpen && (
           <nav className="md:hidden mt-4 flex flex-col gap-4 pb-4 animate-fadeIn">
-            <Link href="/" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">HOME</Link>
-            <Link href="/experience" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">EXPERIENCE</Link>
-            <Link href="/start-with-you" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">START WITH YOU</Link>
-            <Link href="/the-garage" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">THE GARAGE</Link>
+            {navigationItems.map((item) => (
+              <Link key={item.href} href={item.href} className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">
+                {item.label}
+              </Link>
+            ))}
+            <a href="https://enterthewarroom.humanfirstbykk.com/" className="px-6 py-2 text-black text-sm font-medium rounded w-fit transition-all duration-300 hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
+              ENTER WAR ROOM
+            </a>
             <a href="https://calendly.com/kk-humanfirst/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-2 text-black text-sm font-medium rounded w-fit transition-all duration-300 hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
               BOOK A CALL
             </a>
