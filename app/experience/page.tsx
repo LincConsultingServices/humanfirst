@@ -24,8 +24,8 @@ const experiences = [
     description: 'Make real decisions, experience the consequences, and learn how to think strategically in a live business simulation powered by AI.',
     href: '/war-room',
     cta: 'Enter War Room',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OzkNGF1QLzJojRAZQxOhZSHLQRlZqg.png',
-    imageAlt: 'WAR ROOM logo with the tagline Abcesigne There',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-09-28%20231153-zgRkq4x7fjEDDH8kg84pgCehTs8Kjl.png',
+    imageAlt: 'Enter the KK War Room artwork with glowing embers',
   },
 ]
 
