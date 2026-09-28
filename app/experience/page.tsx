@@ -15,8 +15,8 @@ const experiences = [
     description: 'Step into a living environment for entrepreneurial thinking, where leaders make decisions, navigate uncertainty, and build what comes next.',
     href: '/ceo-city',
     cta: 'Explore CEO City',
-    image: '/hero-background.jpg',
-    imageAlt: 'Abstract dark city lights representing CEO City',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dssXmCoi1W75RccwF7VoTv2SdQ9gYK.png',
+    imageAlt: 'Isometric CEO City live map with roads, buildings, and company markers',
   },
   {
     title: 'WAR ROOM',
