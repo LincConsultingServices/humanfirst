@@ -10,16 +10,16 @@ export const metadata = {
 const experiences = [
   {
     title: 'CEO CITY',
-    eyebrow: 'A HumanFirst experience',
-    description: 'Step into a living environment for entrepreneurial thinking, where leaders make decisions, navigate uncertainty, and build what comes next.',
+    eyebrow: 'LIVE CEO Experience',
+    description: 'CEO city is a virtual city where participants interview for roles, get promoted, and gain real CEO and leadership experience running day-to-day operations across a café, grocery store, consulting firm, farmer\'s market, stock exchange, and more.',
     href: 'https://ceo-city-website-copy.vercel.app',
-    cta: 'Explore CEO City',
+    cta: 'Coming soon…',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dssXmCoi1W75RccwF7VoTv2SdQ9gYK.png',
     imageAlt: 'Isometric CEO City live map with roads, buildings, and company markers',
   },
   {
     title: 'WAR ROOM',
-    eyebrow: 'Live business simulation',
+    eyebrow: 'LIVE Entrepreneur Experience',
     description: 'Make real decisions, experience the consequences, and learn how to think strategically in a live business simulation powered by AI.',
     href: 'https://enterthewarroom.humanfirstbykk.com',
     cta: 'Enter War Room',
