@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { WaitlistButton } from '@/components/waitlist-button'
 
 export const metadata = {
   title: 'Experience | humanfirstbykk',
@@ -12,8 +13,8 @@ const experiences = [
     title: 'CEO CITY',
     eyebrow: 'LIVE CEO Experience',
     description: 'CEO city is a virtual city where participants interview for roles, get promoted, and gain real CEO and leadership experience running day-to-day operations across a café, grocery store, consulting firm, farmer\'s market, stock exchange, and more.',
-    href: 'https://ceo-city-website-copy.vercel.app',
-    cta: 'Coming soon…',
+    href: 'https://ceocity.humanfirstbykk.com/',
+    cta: 'Enter Ceocity',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dssXmCoi1W75RccwF7VoTv2SdQ9gYK.png',
     imageAlt: 'Isometric CEO City live map with roads, buildings, and company markers',
   },
@@ -27,6 +28,8 @@ const experiences = [
     imageAlt: 'Enter the KK War Room artwork with glowing embers',
   },
 ]
+
+const ctaClassName = 'inline-block rounded bg-[#D4A017] px-6 py-3 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:opacity-90'
 
 export default function ExperiencePage() {
   return (
@@ -51,7 +54,11 @@ export default function ExperiencePage() {
                   <p className="text-xs tracking-[0.18em] text-[#D4A017] mb-3">{experience.eyebrow}</p>
                   <h2 className="text-3xl md:text-4xl font-black mb-4">{experience.title}</h2>
                   <p className="text-gray-300 leading-relaxed mb-7">{experience.description}</p>
-                  <a href={experience.href} className="inline-block rounded bg-[#D4A017] px-6 py-3 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:opacity-90">{experience.cta}</a>
+                  {experience.waitlist ? (
+                    <WaitlistButton label={experience.cta} className={ctaClassName} />
+                  ) : (
+                    <a href={experience.href} className={ctaClassName}>{experience.cta}</a>
+                  )}
                 </div>
               </article>
             ))}
