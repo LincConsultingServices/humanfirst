@@ -51,7 +51,8 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-white"
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
             onClick={() => setIsOpen(!isOpen)}
             suppressHydrationWarning={true}
           >

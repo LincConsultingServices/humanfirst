@@ -27,6 +27,15 @@ const experiences = [
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-09-28%20231153-zgRkq4x7fjEDDH8kg84pgCehTs8Kjl.png',
     imageAlt: 'Enter the KK War Room artwork with glowing embers',
   },
+  {
+    title: 'FUTURE ACCELERATOR',
+    eyebrow: 'PHASE 1 — AI Opportunity Discovery',
+    description: 'Discover your unfair advantage in under a minute. Answer the 5 U\'s, get your best business idea with a ready pitch, then take it to the War Room.',
+    href: '/future-accelerator',
+    cta: 'Start My Future Accelerator',
+    image: '/keynote-ai-future.jpg',
+    imageAlt: 'KK presenting the AI and the Future of Work keynote',
+  },
 ]
 
 const ctaClassName = 'inline-block rounded bg-[#D4A017] px-6 py-3 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:opacity-90'
@@ -54,7 +63,7 @@ export default function ExperiencePage() {
                   <p className="text-xs tracking-[0.18em] text-[#D4A017] mb-3">{experience.eyebrow}</p>
                   <h2 className="text-3xl md:text-4xl font-black mb-4">{experience.title}</h2>
                   <p className="text-gray-300 leading-relaxed mb-7">{experience.description}</p>
-                  {experience.waitlist ? (
+                  {'waitlist' in experience && experience.waitlist ? (
                     <WaitlistButton label={experience.cta} className={ctaClassName} />
                   ) : (
                     <a href={experience.href} className={ctaClassName}>{experience.cta}</a>

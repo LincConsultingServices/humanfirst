@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "email:test": "node scripts/test-email.mjs",
+    "email:connect": "node scripts/gmail-connect.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "1.10.0",
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "1.2.12",
     "@radix-ui/react-alert-dialog": "1.1.15",
@@ -47,6 +50,7 @@
     "framer-motion": "^12.38.0",
     "gsap": "^3.15.0",
     "input-otp": "1.4.2",
+    "jspdf": "2.5.2",
     "lucide-react": "^0.564.0",
     "next": "16.2.4",
     "next-themes": "^0.4.6",
